@@ -32,6 +32,7 @@ EXTRA FEATURES::
 2. Made another app (SUSPECT) which sends location of suspect through its mobile gps since it works in background service 
    so even if suspect cleared suspect app from memory it continues to send location to us.
 3. we plotted markers of suspects location showing time on that marker.
+4. Suspect App is hidden app.
 
 USEFUL INFORMATION::
        prerequisite: all the suspects , serlock and server should be in same network.
