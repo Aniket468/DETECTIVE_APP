@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NOTES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+
+            android:text=""
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/TIME"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#9BFF14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DELETE"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:text="DELETE"
+            android:textColor="#EEEA0E"
+            android:background="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

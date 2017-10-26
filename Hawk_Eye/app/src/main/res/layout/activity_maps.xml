@@ -1,0 +1,102 @@
+<FrameLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="com.example.aniketkumar.hawkeye.MapsActivity" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp">
+
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:elevation="3dp"
+            android:nextFocusRight="@android:color/holo_blue_dark"
+            android:text="Call"
+            android:textColor="#01FDFF"
+            android:layout_alignBottom="@+id/past"
+            android:layout_alignLeft="@+id/nearby"
+            android:layout_alignStart="@+id/nearby"
+            android:layout_alignTop="@+id/past" />
+
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+            android:text="" />
+
+        <Button
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#000000"
+            android:text="Notes"
+            android:textColor="#FFAB01" />
+
+        <Button
+            android:id="@+id/past"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#FF7F48"
+            android:text="PAST MOVEMENT"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/notes"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:background="#01ACFF"
+            android:text="Current" />
+
+        <Button
+            android:id="@+id/nearby"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:background="#FF68DB"
+            android:onClick="Nearby"
+            android:text="Escaping Places"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

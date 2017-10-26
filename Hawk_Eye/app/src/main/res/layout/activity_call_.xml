@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/call">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="350dp"
+            android:background="#181818"
+
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Emergengy Call Services "
+            android:textColor="#04F8F8"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/police"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/police1"
+
+
+                android:text=""
+                android:layout_alignBottom="@+id/railways"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/railways"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@+id/police"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/railways"
+                android:text="" />
+
+
+            <Button
+                android:id="@+id/ambulance"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@+id/police"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/ambulance"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
